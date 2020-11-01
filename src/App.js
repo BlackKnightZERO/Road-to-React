@@ -8,6 +8,8 @@ import Hello3 from './mycomponent2/Hello3'
 import Condition1 from './mycomponent3/Condition1';
 import Forcerefresh from './mycomponent3/Forcerefresh';
 import Render from './reactDOM/Render';
+import FindDom from './reactDOM/FindDom';
+import SimpleForm from './ReactForm/SimpleForm';
 
 function App() {
   return (
@@ -33,7 +35,9 @@ function App() {
       {/* <Hello3></Hello3> */}
       {/* <Condition1></Condition1> */}
       {/* <Forcerefresh></Forcerefresh> */}
-      <Render></Render>
+      {/* <Render></Render> */}
+      {/* <FindDom></FindDom> */}
+      <SimpleForm></SimpleForm>
     </div>
   );
 }
