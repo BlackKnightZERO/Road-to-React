@@ -10,6 +10,7 @@ import Forcerefresh from './mycomponent3/Forcerefresh';
 import Render from './reactDOM/Render';
 import FindDom from './reactDOM/FindDom';
 import SimpleForm from './ReactForm/SimpleForm';
+import SignUp from './ReactForm/SignUp';
 
 function App() {
   return (
@@ -37,7 +38,8 @@ function App() {
       {/* <Forcerefresh></Forcerefresh> */}
       {/* <Render></Render> */}
       {/* <FindDom></FindDom> */}
-      <SimpleForm></SimpleForm>
+      {/* <SimpleForm></SimpleForm> */}
+      <SignUp></SignUp>
     </div>
   );
 }
