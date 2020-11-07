@@ -10,21 +10,32 @@ class Select extends Component {
                 'Saturn',
                 'Earth',
                 'Jupiter',
-            ]
+            ],
+            // selected : this.state.planets[0],
+            selected : 'Earth',
         }
     }
 
     buildOptions() {
-
         var arr = [];
-
         var size = this.state.planets.length;
-
         for (let i = 0; i < size; i++) {
-            arr.push(<option key={i} value={this.state.planets[i]}>{this.state.planets[i]}</option>)
+            arr.push(
+            <option key={i} value={this.state.planets[i]}>
+                {this.state.planets[i]}
+            </option>
+            );
         }
-
         return arr; 
+    }
+
+    onChangeHandler = (event) => {
+        var selectedValue = event.target.value;
+        this.setState(
+            {
+                selected : selectedValue,
+            }
+        );
     }
 
 
@@ -34,13 +45,12 @@ class Select extends Component {
             <div>
                 <select id="mySelect" 
                 name="mySelect"
-                value="Mars">
+                onChange={this.onChangeHandler}
+                value={this.state.selected}
+                >
                     {this.buildOptions()}
-                    {/* <option>Mars</option>
-                    <option>Saturn</option>
-                    <option>Earth</option>
-                    <option>Jupiter</option> */}
                 </select>
+                <p>{this.state.show}</p>
             </div>
         );
     }
