@@ -11,6 +11,8 @@ import Render from './reactDOM/Render';
 import FindDom from './reactDOM/FindDom';
 import SimpleForm from './ReactForm/SimpleForm';
 import SignUp from './ReactForm/SignUp';
+import Textarea from './ReactForm/Textarea';
+import Select from './ReactForm/Select';
 
 function App() {
   return (
@@ -39,7 +41,9 @@ function App() {
       {/* <Render></Render> */}
       {/* <FindDom></FindDom> */}
       {/* <SimpleForm></SimpleForm> */}
-      <SignUp></SignUp>
+      {/* <SignUp></SignUp> */}
+      {/* <Textarea></Textarea> */}
+      <Select></Select>
     </div>
   );
 }
