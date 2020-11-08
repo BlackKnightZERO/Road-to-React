@@ -47,7 +47,7 @@ function App() {
       {/* <Textarea></Textarea> */}
       {/* <Select></Select> */}
       {/* <List></List> */}
-      <JsonList></JsonList>
+      {/* <JsonList></JsonList> */}
     </div>
   );
 }
