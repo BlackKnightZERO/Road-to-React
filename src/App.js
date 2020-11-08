@@ -13,6 +13,8 @@ import SimpleForm from './ReactForm/SimpleForm';
 import SignUp from './ReactForm/SignUp';
 import Textarea from './ReactForm/Textarea';
 import Select from './ReactForm/Select';
+import List from './ReactForm/List';
+import JsonList from './ReactForm/JsonList';
 
 function App() {
   return (
@@ -43,7 +45,9 @@ function App() {
       {/* <SimpleForm></SimpleForm> */}
       {/* <SignUp></SignUp> */}
       {/* <Textarea></Textarea> */}
-      <Select></Select>
+      {/* <Select></Select> */}
+      {/* <List></List> */}
+      <JsonList></JsonList>
     </div>
   );
 }
