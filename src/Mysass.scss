@@ -1,0 +1,10 @@
+$nameColor: red;
+$backColor:green;
+
+$mypadding: 20px;
+
+.sassStyle{
+    padding: $mypadding;
+    color: $nameColor;
+    background-color: $backColor;
+}

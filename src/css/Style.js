@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Modulecss from '../Mycss.module.css';
+import '../Mysass.scss';
 
 class style extends Component {
 
@@ -16,6 +17,8 @@ class style extends Component {
                 <h1 style={textStyle}>Rifat Zabin - js.obj</h1>
                 <h1 className="lin-color">Shalini - App.css</h1>
                 <h1 className={Modulecss.shuvoColor}>Shuvo - moduled css</h1>
+
+                <h1 className="sassStyle">SASS-Runs in the server, sends css to browser</h1>
             </div>
         );
     }
