@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Modulecss from './Mycss.module.css';
 import Welcome from './mycomponent/Welcome';
 import ArrowFun from './mycomponent/Arrow';
 import Welcome3 from './mycomponent2/Welcome3';
@@ -17,6 +16,7 @@ import Select from './ReactForm/Select';
 import List from './ReactForm/List';
 import JsonList from './ReactForm/JsonList';
 import Style from './css/Style';
+import Read from './axiosBasic/Read';
 
 function App() {
   return (
@@ -50,7 +50,8 @@ function App() {
       {/* <Select></Select> */}
       {/* <List></List> */}
       {/* <JsonList></JsonList> */}
-      <Style></Style>
+      {/* <Style></Style> */}
+      <Read></Read>
     </div>
   );
 }
