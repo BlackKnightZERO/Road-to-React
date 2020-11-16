@@ -17,6 +17,7 @@ import List from './ReactForm/List';
 import JsonList from './ReactForm/JsonList';
 import Style from './css/Style';
 import Read from './axiosBasic/Read';
+import Write from './axiosBasic/Write';
 
 function App() {
   return (
@@ -51,7 +52,8 @@ function App() {
       {/* <List></List> */}
       {/* <JsonList></JsonList> */}
       {/* <Style></Style> */}
-      <Read></Read>
+      {/* <Read></Read> */}
+      <Write></Write>
     </div>
   );
 }
