@@ -18,6 +18,7 @@ import JsonList from './ReactForm/JsonList';
 import Style from './css/Style';
 import Read from './axiosBasic/Read';
 import Write from './axiosBasic/Write';
+import ReactTable from './ReactTable/Mytable';
 
 function App() {
   return (
@@ -53,7 +54,8 @@ function App() {
       {/* <JsonList></JsonList> */}
       {/* <Style></Style> */}
       {/* <Read></Read> */}
-      <Write></Write>
+      {/* <Write></Write> */}
+      <ReactTable></ReactTable>
     </div>
   );
 }
