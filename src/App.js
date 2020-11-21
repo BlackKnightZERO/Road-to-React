@@ -19,6 +19,7 @@ import Style from './css/Style';
 import Read from './axiosBasic/Read';
 import Write from './axiosBasic/Write';
 import ReactTable from './ReactTable/Mytable';
+import Nav from './reactBootstrap/nav';
 
 function App() {
   return (
@@ -55,7 +56,8 @@ function App() {
       {/* <Style></Style> */}
       {/* <Read></Read> */}
       {/* <Write></Write> */}
-      <ReactTable></ReactTable>
+      {/* <ReactTable></ReactTable> */}
+      <Nav></Nav>
     </div>
   );
 }
