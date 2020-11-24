@@ -21,44 +21,57 @@ import Write from './axiosBasic/Write';
 import ReactTable from './ReactTable/Mytable';
 import Nav from './reactBootstrap/nav';
 
+import AdvancedNav from './routeAdvanced/components/mynavigation';
+import AdvancedRoute from './routeAdvanced/components/myroute';
+import { BrowserRouter } from 'react-router-dom';
+
 function App() {
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      
-      {/* <Welcome></Welcome> */}
-      {/* <ArrowFun></ArrowFun> */}
-      {/* <Welcome3></Welcome3> */}
-      {/* <Hello3></Hello3> */}
-      {/* <Condition1></Condition1> */}
-      {/* <Forcerefresh></Forcerefresh> */}
-      {/* <Render></Render> */}
-      {/* <FindDom></FindDom> */}
-      {/* <SimpleForm></SimpleForm> */}
-      {/* <SignUp></SignUp> */}
-      {/* <Textarea></Textarea> */}
-      {/* <Select></Select> */}
-      {/* <List></List> */}
-      {/* <JsonList></JsonList> */}
-      {/* <Style></Style> */}
-      {/* <Read></Read> */}
-      {/* <Write></Write> */}
-      {/* <ReactTable></ReactTable> */}
-      <Nav></Nav>
+
+    <div>
+      <BrowserRouter>
+        <AdvancedNav></AdvancedNav>
+        <AdvancedRoute></AdvancedRoute>
+      </BrowserRouter>
     </div>
+    // <div className="App">
+    //   {/* <header className="App-header">
+    //     <img src={logo} className="App-logo" alt="logo" />
+    //     <p>
+    //       Edit <code>src/App.js</code> and save to reload.
+    //     </p>
+    //     <a
+    //       className="App-link"
+    //       href="https://reactjs.org"
+    //       target="_blank"
+    //       rel="noopener noreferrer"
+    //     >
+    //       Learn React
+    //     </a>
+    //   </header> */}
+      
+    //   {/* <Welcome></Welcome> */}
+    //   {/* <ArrowFun></ArrowFun> */}
+    //   {/* <Welcome3></Welcome3> */}
+    //   {/* <Hello3></Hello3> */}
+    //   {/* <Condition1></Condition1> */}
+    //   {/* <Forcerefresh></Forcerefresh> */}
+    //   {/* <Render></Render> */}
+    //   {/* <FindDom></FindDom> */}
+    //   {/* <SimpleForm></SimpleForm> */}
+    //   {/* <SignUp></SignUp> */}
+    //   {/* <Textarea></Textarea> */}
+    //   {/* <Select></Select> */}
+    //   {/* <List></List> */}
+    //   {/* <JsonList></JsonList> */}
+    //   {/* <Style></Style> */}
+    //   {/* <Read></Read> */}
+    //   {/* <Write></Write> */}
+    //   {/* <ReactTable></ReactTable> */}
+    //   {/* <Nav></Nav> */}
+    //   <AdvancedNav></AdvancedNav>
+    //   <AdvancedRoute></AdvancedRoute>
+    // </div>
   );
 }
 
