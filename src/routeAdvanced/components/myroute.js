@@ -16,7 +16,7 @@ class myroute extends Component {
                     <Route exact path="/" component={Home}></Route>
                     <Route exact path="/page1" component={Page1}></Route>
                     <Route exact path="/page2" component={Page2}></Route>
-                    <Route exact path="/page3" component={Page3}></Route>
+                    <Route exact path="/page3/:id" component={Page3}></Route>
                     <Route component={NotFound}></Route>
                 </Switch>
             </div>
