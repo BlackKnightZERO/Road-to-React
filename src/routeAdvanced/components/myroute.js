@@ -6,6 +6,8 @@ import Page1 from './pages/page1';
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
 
+import Login from './pages/login';
+
 import NotFound from './pages/notFound';
 
 class myroute extends Component {
@@ -13,9 +15,11 @@ class myroute extends Component {
         return (
             <div>
                 <Switch>
+                    <Route exact path="/login" component={Login}></Route>
                     <Route exact path="/" component={Home}></Route>
                     <Route exact path="/page1" component={Page1}></Route>
                     <Route exact path="/page2" component={Page2}></Route>
+                    <Route exact path="/page3" component={Page3}></Route>
                     <Route exact path="/page3/:id" component={Page3}></Route>
                     <Route component={NotFound}></Route>
                 </Switch>

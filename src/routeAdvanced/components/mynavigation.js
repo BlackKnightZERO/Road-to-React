@@ -17,6 +17,8 @@ class mynavigation extends Component {
                         <NavLink exact activeStyle={{ color:"green" }} to="/page1">Page1</NavLink>
                         <NavLink exact activeStyle={{ color:"green" }} to="/page2">Page2</NavLink>
                         <NavLink exact activeStyle={{ color:"green" }} to="/page3">Page3</NavLink>
+
+                        <NavLink exact activeStyle={{ color:"red" }} to="/login">Login</NavLink>
                     </li>
                 </ul>
             </div>
