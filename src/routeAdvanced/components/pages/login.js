@@ -22,6 +22,9 @@ class login extends Component {
     }
 
     logout = () => {
+        this.setState({
+            loggedIn : false,
+        });  
         sessionStorage.clear();
         setTimeout(() => {
             alert('Logged Out..');
@@ -29,12 +32,20 @@ class login extends Component {
     }
 
     render() {
-        return(
-            <div>
-                <button onClick={this.login}>Login</button>
-                <button onClick={this.logout}>Logout</button>
-            </div>
-        );
+        if(sessionStorage.getItem('userName') === 'admin'){
+            return(
+                <div>
+                    <button onClick={this.logout}>Logout</button>
+                </div>
+            );
+        } else {
+            return(
+                <div>
+                    <button onClick={this.login}>Login</button>
+                </div>
+            );
+        }
+        
     }
 }
 
