@@ -5,6 +5,7 @@ class GrandGrandChild extends Component {
         return (
             <div>
                 <h3>Data From Grand Grand Child !</h3>
+                <h5>{this.props.dataOfGrandChild}</h5>
             </div>
         );
     }
