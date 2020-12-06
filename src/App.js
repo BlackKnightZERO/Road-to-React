@@ -24,16 +24,19 @@ import Nav from './reactBootstrap/nav';
 import AdvancedNav from './routeAdvanced/components/mynavigation';
 import AdvancedRoute from './routeAdvanced/components/myroute';
 import { BrowserRouter } from 'react-router-dom';
+import HookUseState from './hook/useState/Basic';
 
 function App() {
   return (
-
-    <div>
-      <BrowserRouter>
-        <AdvancedNav></AdvancedNav>
-        <AdvancedRoute></AdvancedRoute>
-      </BrowserRouter>
-    </div>
+      <div>
+        <HookUseState></HookUseState>
+      </div>
+    // <div>
+    //   <BrowserRouter>
+    //     <AdvancedNav></AdvancedNav>
+    //     <AdvancedRoute></AdvancedRoute>
+    //   </BrowserRouter>
+    // </div>
     // <div className="App">
     //   {/* <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
