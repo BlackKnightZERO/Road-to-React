@@ -25,12 +25,16 @@ import AdvancedNav from './routeAdvanced/components/mynavigation';
 import AdvancedRoute from './routeAdvanced/components/myroute';
 import { BrowserRouter } from 'react-router-dom';
 import HookUseState from './hook/useState/Basic';
+import Son from './componentTree/Son';
 
 function App() {
   return (
-      <div>
-        <HookUseState></HookUseState>
-      </div>
+    <div>
+      <Son></Son>
+    </div>
+      // <div>
+      //   <HookUseState></HookUseState>
+      // </div>
     // <div>
     //   <BrowserRouter>
     //     <AdvancedNav></AdvancedNav>
