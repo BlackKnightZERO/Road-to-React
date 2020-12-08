@@ -26,11 +26,16 @@ import AdvancedRoute from './routeAdvanced/components/myroute';
 import { BrowserRouter } from 'react-router-dom';
 import HookUseState from './hook/useState/Basic';
 import Son from './componentTree/Son';
+import SonContext from './reactContext/Son';
+import { RootProvider } from './reactContext/MyContext';
 
 function App() {
   return (
     <div>
-      <Son name="Grand Grand Child's Name Is Eren Yeager"></Son>
+      {/* <Son name="Grand Grand Child's Name Is Eren Yeager"></Son> */}
+      <RootProvider value="Root Sending Data to Grand Grand Child!">
+        <SonContext></SonContext>
+      </RootProvider>
     </div>
       // <div>
       //   <HookUseState></HookUseState>
